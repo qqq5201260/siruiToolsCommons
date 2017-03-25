@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c6g-BU-yDk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FZKCViewController" id="BYZ-38-t0r" customClass="FZKCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EwT-cE-vc7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="fqf-IT-yL9"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dbM-Mv-ZSy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EwT-cE-vc7" secondAttribute="bottom" id="GwT-XN-1k3"/>
+                            <constraint firstItem="EwT-cE-vc7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uq4-Tt-zUY"/>
+                            <constraint firstAttribute="trailing" secondItem="EwT-cE-vc7" secondAttribute="trailing" id="VRW-4x-Xyg"/>
+                            <constraint firstItem="EwT-cE-vc7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="laT-8w-EqD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6pz-GQ-11Y"/>
+                    <connections>
+                        <outlet property="tableView" destination="EwT-cE-vc7" id="KRJ-re-OAc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="-144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6tU-if-OMy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c6g-BU-yDk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cFy-54-eHS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gld-iE-6Rg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEh-rF-mc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="-646.32683658170924"/>
+        </scene>
+        <!--Pay View Controller-->
+        <scene sceneID="JPL-91-yDN">
+            <objects>
+                <viewController storyboardIdentifier="FZKCPayViewController" id="iea-Ur-K9Q" customClass="FZKCPayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ctb-hY-c2B"/>
+                        <viewControllerLayoutGuide type="bottom" id="ww9-L3-Fpa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qWQ-bK-OLr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSZ-vw-dPa">
+                                <rect key="frame" x="150" y="319" width="77" height="30"/>
+                                <state key="normal" title="支付宝支付"/>
+                                <connections>
+                                    <action selector="aliPayAction:" destination="iea-Ur-K9Q" eventType="touchUpInside" id="l4p-bT-Vws"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EU-O6-oID">
+                                <rect key="frame" x="157" y="423" width="62" height="30"/>
+                                <state key="normal" title="微信支付"/>
+                                <connections>
+                                    <action selector="WXPayAction:" destination="iea-Ur-K9Q" eventType="touchUpInside" id="efw-pA-Lzh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5EU-O6-oID" firstAttribute="centerX" secondItem="qWQ-bK-OLr" secondAttribute="centerX" id="9ff-lh-O5c"/>
+                            <constraint firstItem="SSZ-vw-dPa" firstAttribute="centerX" secondItem="qWQ-bK-OLr" secondAttribute="centerX" id="BrF-5X-7ZW"/>
+                            <constraint firstItem="SSZ-vw-dPa" firstAttribute="centerY" secondItem="qWQ-bK-OLr" secondAttribute="centerY" id="DUC-C0-hG0"/>
+                            <constraint firstItem="5EU-O6-oID" firstAttribute="top" secondItem="SSZ-vw-dPa" secondAttribute="bottom" constant="74.5" id="IhX-4b-wue"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHv-hS-FaJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-1231"/>
+        </scene>
+    </scenes>
+</document>
