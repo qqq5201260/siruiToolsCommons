@@ -41,6 +41,11 @@
 #define AliPushAppSecret @"90ac84fca6f47085f35456f59d0fffc1"
 
 
-
+/**
+ 阿里HTTPDNS 账户
+ 
+ @return AliPushAppSecret
+ */
+#define AliHTTPDNSCount 147659
 
 #endif /* FZKAppkeyComon_h */

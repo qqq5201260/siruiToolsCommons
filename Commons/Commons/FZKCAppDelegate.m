@@ -12,6 +12,7 @@
 #import "FZKPayManager.h"
 #import "FZKCAliPushManager.h"
 #import "FZKAppkeyComon.h"
+#import "FZKCHTTPDNSManager.h"
 
 @interface FZKCAppDelegate ()<WXApiDelegate,UNUserNotificationCenterDelegate>
 
@@ -46,6 +47,8 @@
         }
         
     } appDelegateAndMessageReceive:self sendNotificationAck:launchOptions];
+    
+    [FZKCHTTPDNSManager registerAliHTTPDNSCount:AliHTTPDNSCount];
 //    [CloudPushSDK turnOnDebug];
 //    NSLog(@"\n推送状态%d\n",[CloudPushSDK isChannelOpened]);
     
