@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D00D5F11E864B5C00827F9E /* FZKCHTTPDNSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D00D5F01E864B5C00827F9E /* FZKCHTTPDNSManager.m */; };
+		0D00D5F81E86680100827F9E /* FZKCHTTPDNSConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D00D5F71E86680100827F9E /* FZKCHTTPDNSConfigurationManager.m */; };
 		0D87D0111E85321A0033A96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D87CFD71E85321A0033A96D /* Assets.xcassets */; };
 		0D87D0121E85321A0033A96D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D87CFD81E85321A0033A96D /* LaunchScreen.storyboard */; };
 		0D87D0131E85321A0033A96D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D87CFDA1E85321A0033A96D /* Main.storyboard */; };
@@ -54,6 +55,8 @@
 		0D00D5EC1E862A7300827F9E /* Commons.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Commons.entitlements; sourceTree = "<group>"; };
 		0D00D5EF1E864B5C00827F9E /* FZKCHTTPDNSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZKCHTTPDNSManager.h; sourceTree = "<group>"; };
 		0D00D5F01E864B5C00827F9E /* FZKCHTTPDNSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZKCHTTPDNSManager.m; sourceTree = "<group>"; };
+		0D00D5F61E86680100827F9E /* FZKCHTTPDNSConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZKCHTTPDNSConfigurationManager.h; sourceTree = "<group>"; };
+		0D00D5F71E86680100827F9E /* FZKCHTTPDNSConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZKCHTTPDNSConfigurationManager.m; sourceTree = "<group>"; };
 		0D87CFBC1E8532000033A96D /* Commons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D87CFD71E85321A0033A96D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D87CFD91E85321A0033A96D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 			children = (
 				0D00D5EF1E864B5C00827F9E /* FZKCHTTPDNSManager.h */,
 				0D00D5F01E864B5C00827F9E /* FZKCHTTPDNSManager.m */,
+				0D00D5F61E86680100827F9E /* FZKCHTTPDNSConfigurationManager.h */,
+				0D00D5F71E86680100827F9E /* FZKCHTTPDNSConfigurationManager.m */,
 			);
 			name = "HTTPDNS管理器";
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				0D87D01B1E85321A0033A96D /* WXApiManager.m in Sources */,
 				0D87D0211E85321A0033A96D /* WXMediaMessage+messageConstruct.m in Sources */,
 				0D87D0151E85321A0033A96D /* FZKCViewController.m in Sources */,
+				0D00D5F81E86680100827F9E /* FZKCHTTPDNSConfigurationManager.m in Sources */,
 				0D87D0201E85321A0033A96D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				0D87D02B1E85321A0033A96D /* FZKCAliPushManager.m in Sources */,
 				0D87D0171E85321A0033A96D /* main.m in Sources */,
